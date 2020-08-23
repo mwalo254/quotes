@@ -11,7 +11,7 @@ export class QuotesComponent implements OnInit {
 
   quotes:Quotes[] = [
     new Quotes(1, 'Be yourself everyone else is already taken',
-    'by Oscar Wilde the quote was submited by osman',new Date(2020,3,14)),
+    'by Oscar Wilde the quote was submited by nick',new Date(2020,3,14)),
   new Quotes(2,'Be the change that you wish to see in the world','Mahatma Gandhi',new Date(2019,6,9)),
   ];
   addNewQuotes(quotes){
