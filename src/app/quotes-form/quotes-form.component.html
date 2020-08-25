@@ -4,13 +4,13 @@
     <form (ngSubmit)='submitQuotes(quotesForm.value)'  #quotesForm='ngForm'>
      <div class="form-group">
       <label for="submiter">Write your Quote</label>
-      <textarea  cols="30" rows="10" required [(ngModel)]="newQuotes.submiter" class="form-control" name="submiter" #submiter="ngModel" id="submiter" type="text" class="form-control"> </textarea>
-      <div class="alert alert-danger" *ngIf="submiter.touched && !submiter.valid">the quote is required</div>
+      <textarea  cols="30" rows="10" required [(ngModel)]="newQuotes.submitter" class="form-control" name="submitter" #submitter="ngModel" id="submitter" type="text" class="form-control"> </textarea>
+      <div class="alert alert-danger" *ngIf="submitter.touched && !submitter.valid">the quote is required</div>
   </div>
   <div class="form-group">
-      <label for="auother">Aouther's Name</label>
-      <input required [(ngModel)]="newQuotes.auother" class="form-control" name="auother" #auother="ngModel" id="auother" type="text" class="form-control">
-      <div class="alert alert-danger" *ngIf="auother.touched && !auother.valid">Auother name is required</div>
+      <label for="author">Author's Name</label>
+      <input required [(ngModel)]="newQuotes.author" class="form-control" name="author" #author="ngModel" id="author" type="text" class="form-control">
+      <div class="alert alert-danger" *ngIf="author.touched && !author.valid">Author name is required</div>
   </div>
   <div class="form-group">
     <label for="quote">Submitter</label>
